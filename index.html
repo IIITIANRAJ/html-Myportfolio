@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background-color: #B2B5E0;
+            color:white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #00ABE4;
+        }
+        nav ul{
+            display: flex;
+             justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 23px;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+        }
+        nav ul li a:hover{
+            color: rgb(153,153,226);
+            font-size: 1.01rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection > div{
+            width:30%;
+
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0px;
+        }
+        .leftsection{
+            font-size: 3rem;
+        }
+        .rightsection img{
+            width: 80%;
+            margin: 50px 0px;
+           
+        }
+        .orange{
+            color: rgb(140, 10, 226);
+        }
+        main hr{
+            border:0;
+            background-color: blue;
+            height: 1.2px; 
+            margin: 40px 84px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Raj Verma's Portfolio</div>
+            <div class="high">
+                <ul>
+                   <li><a href="./index.html">Home</a></li>
+                   <li><a href="./Myportfolio/about.html">About</a></li>
+                   <li><a href="./projects.html">Projects</a></li>
+                   <li><a href="./Myportfolio/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="orange"> Raj</span>
+                <div>and I am a passionate</div>
+                <span id="element" style="color: rgb(213, 19, 231);"></span>
+            </div>
+            <div class="rightsection">
+                <img src="./Myportfolio/assets/My Photo.jpg" alt="Developer image">
+            </div>
+        </section>
+        <hr>
+        <footer style="text-align: center; font-size: 25px;"><p>2024 Raj Verma all right reserved.</p></footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
